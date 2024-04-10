@@ -1,0 +1,105 @@
+.game {
+	width: 1800px;
+	height: 900px;
+	background-color: #00BFFF;
+	border-bottom: 4px solid #8B4513;
+	margin: auto;
+}
+#dino {
+	width: 450px;
+	height: 450px;
+	background-image: url("img/dino.png");
+	background-size: 450px 450px;
+	position: relative;
+	top: 453px;
+}
+
+#sun {
+	width: 250px;
+	height: 250px;
+	background-image: url("img/sun.png");
+	background-size: 250px 250px;
+	position: relative;
+	top: -870px;
+}
+
+#cloud1 {
+	width: 550px;
+	height: 350px;
+	background-image: url("img/cloud.png");
+	background-size: 550px 350px;
+	position: relative;
+	top: -1200px;
+	left: 1300px;
+	animation: cloud1Mov 40s infinite linear;
+}
+
+#cloud2 {
+	width: 550px;
+	height: 350px;
+	background-image: url("img/cloud.png");
+	background-size: 550px 350px;
+	position: relative;
+	top: -1500px;
+	left: 700px;
+	animation: cloud2Mov 40s infinite linear;
+}
+
+#cactus {
+	width: 360px;
+	height: 420px;
+	background-image: url("img/cactus.png");
+	background-size: 360px 420px;
+	position: relative;
+	top: 30px;
+	left: 1740px;
+	animation: cactusMov 1.5s infinite linear;
+}
+@keyframes cactusMov {
+	0% {
+		left: 1740px;
+	}
+	100% {
+		left: -60px;
+	}
+}
+
+@keyframes cloud1Mov {
+	0% {
+		left: 1300px;
+	}
+	100% {
+		left: -60px;
+	}
+}
+
+@keyframes cloud2Mov {
+	0% {
+		left: 700px;
+	}
+	100% {
+		left: -60px;
+	}
+}
+
+.jump {
+	animation: jump 1s linear;
+}
+
+@keyframes jump {
+	0% {
+		top: 350px;
+	}
+	30% {
+		top: 120px;
+	}
+	50% {
+		top: 60px;
+	}
+	60% {
+		top: 110px;
+	}
+	100% {
+		top: 350px;
+	}
+}
